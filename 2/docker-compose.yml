@@ -1,0 +1,28 @@
+version: '3.3'
+services:
+  feelingsurf:
+    network_mode: host
+    container_name: feelingsurf
+    environment:
+      - access_token=91399d574fcad3ce98445a7a33a94175
+    image: 'feelingsurf/viewer:stable'
+    restart: unless-stopped
+ 
+  otohits:
+    restart: unless-stopped
+    container_name: otohits
+    environment:
+      - APPLICATION_KEY=332e651a-797a-4db4-bf50-20260ff74347
+    image: 'otohits/app:latest'
+
+  traffmonetizer:
+    restart: unless-stopped
+    container_name: traffmonetizer
+    command: start accept --token 67CtdHwXSmhAFEDYJ4OUcf4lilwIjulI3shJFqVn2MI= --device-name traffmonetizer
+    image: 'traffmonetizer/cli_v2'
+  
+  9hits:
+    container_name: 9hits
+    image: 9hitste/app
+    command: /nh.sh --token=ed8aa5dd67eeaac8bfe307df50a95a4c --system-session --allow-crypto=no
+    network_mode: host

@@ -18,7 +18,7 @@ services:
   traffmonetizer:
     restart: unless-stopped
     container_name: traffmonetizer
-    command: start accept --token 67CtdHwXSmhAFEDYJ4OUcf4lilwIjulI3shJFqVn2MI= --device-name traffmonetizer
+    command: start accept --token dhV9Y3GoYx7JGmKYNpEnyvoovbf8321b2rkhKC9ocBo= --device-name traffmonetizer
     image: 'traffmonetizer/cli_v2'
   
   9hits:

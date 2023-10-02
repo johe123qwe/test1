@@ -33,3 +33,10 @@ services:
       - RP_EMAIL=dukou1213@gmail.com
       - RP_API_KEY=ebad4050-673a-4071-8139-677ddc543bbd
     image: 'repocket/repocket'
+
+  proxylite:
+    container_name: proxylite
+    image: proxylite/proxyservice
+    environment:
+      - USER_ID=502036
+    restart: unless-stopped

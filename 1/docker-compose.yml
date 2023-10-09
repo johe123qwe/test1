@@ -27,7 +27,7 @@ services:
     command: /nh.sh --token=ed8aa5dd67eeaac8bfe307df50a95a4c --system-session --allow-crypto=no
     network_mode: host
 
-  repocket:
+  repocket: 
     container_name: repocket
     environment:
       - RP_EMAIL=dukou1213@gmail.com

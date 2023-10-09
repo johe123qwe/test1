@@ -14,7 +14,7 @@ services:
     environment:
       - APPLICATION_KEY=40c85895-54e5-423b-b616-2b972bc04109
     image: 'otohits/app:latest'
-
+ 
   traffmonetizer:
     restart: unless-stopped
     container_name: traffmonetizer

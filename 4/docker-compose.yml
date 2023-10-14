@@ -12,7 +12,8 @@ services:
     restart: unless-stopped
     container_name: otohits
     environment:
-      - APPLICATION_KEY=d8e012e5-25f7-4610-8ec1-7d3840023312
+      # - APPLICATION_KEY=d8e012e5-25f7-4610-8ec1-7d3840023312
+      - APPLICATION_KEY=40c85895-54e5-423b-b616-2b972bc04109
     image: 'otohits/app:latest'
 
   traffmonetizer:

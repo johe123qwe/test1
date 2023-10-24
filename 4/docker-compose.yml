@@ -27,12 +27,12 @@ services:
     command: /nh.sh --token=ed8aa5dd67eeaac8bfe307df50a95a4c --system-session --allow-crypto=no
     network_mode: host
  
-  repocket:
-    container_name: repocket
-    environment:
-      - RP_EMAIL=dukou1213@gmail.com
-      - RP_API_KEY=ebad4050-673a-4071-8139-677ddc543bbd
-    image: 'repocket/repocket'
+  # repocket:
+  #   container_name: repocket
+  #   environment:
+  #     - RP_EMAIL=dukou1213@gmail.com
+  #     - RP_API_KEY=ebad4050-673a-4071-8139-677ddc543bbd
+  #   image: 'repocket/repocket'
 
   # proxylite:
   #   container_name: proxylite

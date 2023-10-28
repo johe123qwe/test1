@@ -8,12 +8,12 @@ services:
     image: 'feelingsurf/viewer:stable'
     restart: unless-stopped
  
-  otohits:
-    restart: unless-stopped
-    container_name: otohits
-    environment:
-      - APPLICATION_KEY=40c85895-54e5-423b-b616-2b972bc04109
-    image: 'otohits/app:latest'
+  # otohits:
+  #   restart: unless-stopped
+  #   container_name: otohits
+  #   environment:
+  #     - APPLICATION_KEY=40c85895-54e5-423b-b616-2b972bc04109
+  #   image: 'otohits/app:latest'
  
   traffmonetizer:
     restart: unless-stopped

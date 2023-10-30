@@ -26,6 +26,7 @@ services:
     image: 9hitste/app
     command: /nh.sh --token=ed8aa5dd67eeaac8bfe307df50a95a4c --system-session --allow-crypto=no
     network_mode: host
+    restart: unless-stopped
 
   # repocket: 
   #   container_name: repocket
